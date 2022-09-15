@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {//var emailID =document.myform.email.value;
+         //atpos=emailID.indexOf("@");
+         //if(atpos==Null){
+            //alert("please enter valid email")
+         //}
+
+        if(document.myform.email.value=="")
+        alert("U have left email as blank")
+        }
+        </script>
+        
+</head>
+<body>
+    <form name="myform" onsubmit="validate()">
+        <label for="prefix">Prefix</label>
+
+            <select name="prefix" id="prefix">
+
+            <option value="Dr">Dr</option>
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Miss">Miss</option>
+            </select>
+     
+ 
+        <p>
+              <label>First name <input type="text" /></label>
+            </p>    
+             
+        <p>
+              <label>Last name<input type="text" /></label>
+            </p>
+         
+            <p>
+                <label>Organisation<input type="text" /></label>
+              </p>
+              <p>
+                <label>Title<input type="text" /></label>
+              </p>
+              <p>
+                <label>Relationship to student<input type="text" /></label>
+              </p>
+              <p>
+                <label>Telephone<input type="text" /></label>
+              </p>
+              <p>
+                <label>email<input type="text" name="email" /></label>
+              </p>
+        <p>
+            <input type="submit" value="Submit">
+            </p>
+         
+         
+          </form>
+</body>
+</html>
